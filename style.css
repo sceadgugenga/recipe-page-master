@@ -1,0 +1,160 @@
+:root {
+  --main-bg-color: #181719;
+  --main-font-family: "Montserrat", sans-serif;
+  --heading-font-family: "Playfair Display", serif;
+  --accent-font-family: "Crimson Pro", serif;
+  --main-color: #ffffff;
+  --accent-color: #f2994a;
+  --info-color: #333333;
+  --info-heading-color: #bdbdbd;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 48;
+}
+.cooking-stats-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin-top: 1em;
+}
+
+.cooking-time-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+.cooking-stat {
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+h3 {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--main-font-family);
+}
+.about {
+  font-size: 0.75em;
+  font-style: italic;
+  text-indent: -2em;
+}
+.about::before {
+  content: url("6dots.svg");
+  margin-right: 0.5em;
+}
+
+.about-recipe {
+  display: grid;
+  width: 79vw;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+.recipe-name {
+  margin-left: -3.5em;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.hero-image > img {
+  content: url("photo1.png");
+  width: 100%;
+}
+
+.ingredient {
+  display: flex;
+}
+.ingredient > input {
+  display: grid;
+  align-self: baseline;
+  transform: scale(1.6);
+}
+label.ingredient {
+  position: relative;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+div > input {
+  text-decoration: line-through;
+}
+
+input:checked + label.ingredient {
+  text-decoration: line-through;
+}
+
+div[class$="-head"] {
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--info-heading-color);
+}
+
+div[class$="-info"] {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.time-info {
+  color: var(--info-color);
+}
+.yield-info {
+  color: var(--accent-color);
+}
+
+li.step::marker {
+  font-size: 1.25em;
+  line-height: 0.75;
+  width: 1.5rem;
+  padding-top: 0.25rem;
+  text-align: center;
+  color: #fff;
+  background-color: purple;
+  border-radius: 0.25em;
+}
+ol {
+  counter-reset: orderedlist;
+}
+
+ol li::before {
+  counter-increment: orderedlist;
+  content: counter(orderedlist);
+}
+@media (min-width: 900px) {
+  .hero-image {
+    width: 67.3vw;
+  }
+}
