@@ -182,7 +182,7 @@ li.step {
 
   gap: 1.5em;
   align-items: start;
-  font-size: 1em
+  font-size: 1em;
   line-height: 1.25;
 }
 
@@ -255,9 +255,8 @@ footer {
     margin-top: 2em;
     gap: 3em;
     padding: 4.6em 2.6em 4.1em 3em;
-width: 164px;
+    width: 164px;
     border-radius: 1em;
-    
   }
 
   .content-wrapper {
@@ -265,8 +264,6 @@ width: 164px;
     flex-direction: row-reverse;
     gap: 19%;
   }
-
- 
 
   .main-content {
     width: 61%;
